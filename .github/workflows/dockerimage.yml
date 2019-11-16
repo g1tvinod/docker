@@ -13,5 +13,4 @@ jobs:
     - name: Build the Docker image
       run: |
         docker build . --file Dockerfile-suranagivinod-openjdk8 --tag docker.pkg.github.com/g1tvinod/docker/openjdk8:latest
-        docker login docker.pkg.github.com --username g1tvinod
         docker push docker.pkg.github.com/g1tvinod/docker/openjdk8:latest
